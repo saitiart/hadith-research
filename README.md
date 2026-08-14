@@ -16,11 +16,11 @@ a generation ordering and the system solves exactly in one forward pass.
 ## Data
 
 - `all_narrators_global.json` — narrator metadata
-- `sahih_al_bukhari_clean.json`,
-- `sahih_muslim_clean_full.json`
-- `/nasai_clean_full.json`
-- `/sahih-muslim/sahih_muslim_clean_full.json`
-  — traditions with their chains, Bukhari and Muslim are are more robust, Tirmidhi and AbuDawud are less, which is why they were not used in the first place
+- `bukhari.json`,
+- `sahih_muslim.json`
+- `nasai.json`
+- `abudawud.json`
+  — traditions with their chains, Bukhari and Muslim are are more robust, Nasai and AbuDawud are less, which is why they were not used in the first place
 
 ## Running
 
@@ -43,12 +43,6 @@ ablation table, per-generation concentration, and the plots
 - `GEN_CAP = 4` — vertical edges spanning more generations are discarded
 - Lateral (same-ṭabaqa) edges are excluded: a ṭabaqa gives no ordering
   evidence within itself. Their mass share is reported as `lateral_share`.
-
-## Reproducing the paper
-
-Tables 2–3 come from `ablation(M)`; Table 1 from `M['diag']`; the Gini
-figures from `concentration(M)`; the centrality correlations from
-`centrality_baseline(M, ablation(M))`. Run once per collection.
 
 ## Notes
 
