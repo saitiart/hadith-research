@@ -28,7 +28,7 @@ a generation ordering and the system solves exactly in one forward pass.
 The __main__ prints network diagnostics, preprocessing drop shares, conservation, the
 ablation table, per-generation concentration, and the plots
 
-## What the numbers are
+## The Notation
 
 | quantity | meaning |
 |---|---|
@@ -38,11 +38,6 @@ ablation table, per-generation concentration, and the plots
 | `cumulative` | σ(K), u removed together with all ranked above him |
 | `stranded` | material entering orphans, never delivered |
 
-## Parameters
-
-- `GEN_CAP = 4` — vertical edges spanning more generations are discarded
-- Lateral (same-ṭabaqa) edges are excluded: a ṭabaqa gives no ordering
-  evidence within itself. Their mass share is reported as `lateral_share`.
 
 ## Notes
 
